@@ -3,6 +3,7 @@
 # backwards compatibility). Please don't change it unless you know what
 # you're doing.
 Vagrant.configure("2") do |config|
+  config.vm.name "test01"
   config.vm.box = "ryan/centos7"
   config.vm.network "public_network", bridge: "Microsoft Network Adapter Multiplexor Driver - Virtual Switch"
   config.vm.provider "hyperv" do |hv|
