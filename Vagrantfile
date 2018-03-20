@@ -5,7 +5,7 @@
 Vagrant.configure("2") do |config|
   config.vm.name "test01"
   config.vm.box = "ryan/centos7"
-  config.vm.network "public_network", bridge: "Microsoft Network Adapter Multiplexor Driver - Virtual Switch"
+  config.vm.network "public_network", bridge: "Microsoft Network Adapter Multiplexor Driver"
   config.vm.provider "hyperv" do |hv|
     hv.vmname = "test01"
     hv.memory = "1024"
